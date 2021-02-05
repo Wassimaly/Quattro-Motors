@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quattro Motors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="{% static 'website/images/quattro_icon.ico'%}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/jquery.timepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'website/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+  </head>
+  <body>
+  		<div class="wrap">
+	    <div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-3 d-flex align-items-center">
+						<a class="navbar-brand" href="index.html"> QU<span class="a">4</span>TTRO<br><span id="headermotors">M O T O R S</span></a>
+					</div>
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col">
+								<div class="top-wrap d-flex">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
+									<div class="text"><span>Address</span><a href="https://www.google.com/maps/place/5837+Kessler+Ln,+Merriam,+KS+66203/@39.0229176,-94.6950902,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0ed03933b9b95:0x79e46b9c1f136db0!8m2!3d39.0229176!4d-94.6929015" target="_blank">5837 Kessler Ln, Merriam, KS 66203</a></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="top-wrap d-flex">
+									<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-location-arrow"></span></div>
+									<div class="text"><span>Call us</span><a href="tel:9134449444">(913) 444-9444</a></div>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex justify-content-end align-items-center">
+								<div class="social-media">
+					    		<p class="mb-0 d-flex">
+					    			<!--<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>-->
+					    			
+					    			<a href="https://www.instagram.com/qu4ttrokc" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+					    		</p>
+				        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+				<form action="#" class="searchform order-lg-last">
+          <div class="form-group d-flex">
+          </div>
+        </form>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'website/images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 ftco-animate pb-5">
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Set Appointment <i class="fa fa-chevron-right"></i></span></p>
+            <h1 class="mb-0 bread">Set Appointment</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+<br>
+<br>
+   <center>
+	 	<h1> Review Your Information:</h1>
+    <strong>Service: </strong>{{service}} <br>
+		<strong> Name: </strong> {{your_name}} <br>
+		<strong>Phone Number: </strong> {{your_number}} <br>
+		<strong>Date: </strong> {{date}} <br>
+		<strong>Time:  </strong> {{time}} <br>
+		<strong>Message: </strong> {{your_message}} <br>
+		<br>
+    <br>
+    <strong>Note: </strong> This appointment hasn't been set yet. We will contact you shortly via telephone to confirm your appointment.
+	</center>
+<br>
+<br>
+<br>
+<br>
+
+       <footer class="footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="logo"><a href="index.html">QU4TTRO<br><span id="headermotors">M O T O R S</span></a></h2>
+              <p>Your Exclusive Repair Shop</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+              
+            <!--    <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>-->
+                <li class="ftco-animate"><a href="https://www.instagram.com/qu4ttrokc"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Oil Change</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Batteries</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Tow Truck</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Tire Change</a></li>
+                <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Engine Repair</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact information</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon fa fa-map-marker"></span><span class="text"><a href="https://www.google.com/maps/place/5837+Kessler+Ln,+Merriam,+KS+66203/@39.0229176,-94.6950902,17z/data=!3m1!4b1!4m5!3m4!1s0x87c0ed03933b9b95:0x79e46b9c1f136db0!8m2!3d39.0229176!4d-94.6929015" target="_blank">5837 Kessler Ln, Merriam, KS 66203</a></span></li>
+                  <li><a href="tel:9134449444"><span class="icon fa fa-phone"></span><span class="text">(913) 444-9444</span></a></li>
+                  <li><a href="mailto:info@quattro-kc.com"><span class="icon fa fa-paper-plane"></span><span class="text">info@quattro-kc.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Business Hours</h2>
+              <div class="opening-hours">
+                <h4>Opening Days:</h4>
+                <p class="pl-3">
+                  <span>Monday – Friday: 9:00AM-6:00PMm</span>
+                  <br>
+                  <span>Saturday: 9:00AM-5:00PM</span>
+                </p>
+                <h4>Vacations:</h4>
+                <p class="pl-3">
+                  <span>All Sunday Days</span>
+                  <span>All Official Holidays</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+         <p> Edited By <span> <a href = "mailto:mohamedwaseem0978@gmail.com">Wassim Aly</a></span> </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'website/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'website/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'website/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'website/js/google-map.js' %}"></script>
+  <script src="{% static 'website/js/main.js' %}"></script>
+  </body>
+</html>
+
+
+
+
