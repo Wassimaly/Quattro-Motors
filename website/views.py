@@ -1,3 +1,14 @@
+import django
+
+from django.conf import settings
+
+
+
+
+
+
+
+
 from django.shortcuts import render
 from django.core.mail import send_mail
 
@@ -15,19 +26,15 @@ def contact(request):
 		message_email = "Hello Flavio, \n" + "You have received a contact us message from: " + name + "\n Message: \n" + message + "\n To contact them back, here is their email: " + email 
 		#send an email
 		send_mail(
-			subject, #subject
-			message_email, #message
-			'contactemailquattro@gmail.com', #from email
-			['gejoxi8593@poetred.com'], #To Email
-			fail_silently=False)
+			subject,
+			 message_email,
+			  settings.EMAIL_HOST_USER,
+			   ['info@quattro-kc.com'],
+			    fail_silently=False)
 
 		confirmationmsg= "Hello " + name + ',\n\nYou are receiving this email to confirm your contact us message was sent successfully. We will respond to you shortly via email.\n\nThank you for choosing us for all your automotive needs!'
 		send_mail(
-			'Quattro Motors Contact',
-			confirmationmsg,
-			'contactemailquattro@gmail.com', #from email
-			[email],
-			)
+			subject, confirmationmsg, settings.EMAIL_HOST_USER, [email], fail_silently=False)
 			
 
 
@@ -63,9 +70,9 @@ def appointment(request):
 		send_mail(
 			'Appointment Request', #subject
 			appointment, #message
-			'contactemailquattro@gmail.com', #from email
-			['gejoxi8593@poetred.com'], #To Email
-			)
+			settings.EMAIL_HOST_USER, #from email
+			['info@quattro-kc.com'], #To Email
+			fail_silently=False)
 			
 
 
