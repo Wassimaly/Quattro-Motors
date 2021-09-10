@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import environ
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Initialise environment variables
 env = environ.Env()
@@ -54,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'quattro.urls'
@@ -131,7 +135,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
@@ -139,3 +143,5 @@ EMAIL_HOST_USER = 'contactemailquattro@gmail.com'
 EMAIL_HOST_PASSWORD =env('PASSWD')
 EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
+
+django_heroku.settings(locals())
