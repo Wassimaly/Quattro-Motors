@@ -373,16 +373,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1200px){
   .quattro{
     font-size: 9em;
-    left: 173px;
+    left: 100px;
   }
   .motors{
     font-size: 4em;
-    left: 685px;
+    left: 614px;
     top: 413px;
   }
   .motto{
-    font-size: 1.5em;
-    left: 457px;
+    font-size: 2em;
+    left: 342px;
     top: 514px;
 }
   
@@ -436,6 +436,42 @@ h1, h2, h3, h4, h5, h6 {
     left: 189px;
   }
 }
+@media (max-width: 460px){
+  .quattro{
+    left: 50px;
+    font-size: 3em;
+    top: 282px;
+  }
+  .motors{
+    left: 220px;
+    font-size: 1.32em;
+    top: 326px;
+  }
+  .motto{
+    font-size: 1em;
+    top: 370px;
+    left: 89px;
+  }
+}
+@media (max-width: 340px){
+  .quattro{
+    left: 25px;
+    font-size: 2.5em;
+    top: 228px;
+  }
+  .motors{
+    left: 167px;
+    font-size: 1.1em;
+    top: 266px;
+  }
+  .motto{
+    font-size: 0.7em;
+    top: 299px;
+    left: 80px;
+
+  }
+}
+
 @keyframes getin {
   0% {
     opacity: 0%;

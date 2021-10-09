@@ -32,9 +32,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'quattro-kc.herokuapp.com', 'quattro-kc.com', 'wwww.quattro-kc.com']
 
 
 # Application definition
@@ -145,3 +145,8 @@ EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
 
 django_heroku.settings(locals())
+
+if os.getcwd() == '/app':
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PORT', 'https')
+    SECURE_SSL_REDIRECT = True
+    Debug = False
